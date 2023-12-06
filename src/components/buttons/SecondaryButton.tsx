@@ -1,11 +1,11 @@
 import React from "react";
 import Button, { ButtonProps } from "./Button";
 
-const PrimaryButton: React.FC<ButtonProps> = (props) => {
+const SecondaryButton: React.FC<ButtonProps> = (props) => {
   return (
     <Button
       {...props}
-      className={`py-2 w-fit text-white font-semibold bg-primary rounded-lg hover:bg-primary-hover transition-all ${
+      className={`py-2 w-fit text-white font-semibold bg-red-500 rounded-lg hover:bg-red-600 transition-all ${
         props.className ?? ""
       }`}
     >
@@ -14,4 +14,4 @@ const PrimaryButton: React.FC<ButtonProps> = (props) => {
   );
 };
 
-export default PrimaryButton;
+export default SecondaryButton;

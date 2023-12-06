@@ -21,7 +21,7 @@ export default function Home() {
             {t("Each section has a different focus to help you learn React")}
           </p>
         </div>
-        <div className="grid grid-cols-4 gap-4">
+        <div className="grid grid-cols-5 gap-4">
           <CategoryCard
             title={t("Components")}
             description={t("Headless vs styled components")}
@@ -36,6 +36,11 @@ export default function Home() {
             title={t("UseEffect")}
             description={t("React useEffect")}
             to="/useeffect"
+          />
+          <CategoryCard
+            title={t("Providers")}
+            description={t("React Providers")}
+            to="/providers"
           />
           <CategoryCard
             title={t("Playground")}
