@@ -1,0 +1,24 @@
+{
+    "Creates a basic React Function Component": {
+        "prefix": "cfcc",
+        "body": [
+            "import React from \"react\";",
+            "import { useTranslation } from \"react-i18next\";",
+            
+            "",
+            "interface ${TM_FILENAME_BASE}Props {",
+            "    id?: string;",
+            "}",
+            "",
+            "const ${TM_FILENAME_BASE}: React.FC<${TM_FILENAME_BASE}Props> = ({ id }) => {",
+            "    const { t } = useTranslation();",
+            "",
+            "    return <div>${TM_FILENAME_BASE}</div>;",
+            "};",
+            "",
+            "export default ${TM_FILENAME_BASE};",
+            ""
+        ],
+        "description": "Creates a basic React Function Component"
+    }
+}
